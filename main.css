@@ -29,7 +29,5 @@ html, body {
 }
 
 .row>img {
-    object-fit: cover;
     height: 15rem;
-    width: 11rem;
 }
