@@ -61,6 +61,7 @@ body {
     position: fixed;
     bottom: 5%;
     left: 45%;
+    transition: all ease 0.2s;
 }
 
 #scroll-down-text button:hover {
