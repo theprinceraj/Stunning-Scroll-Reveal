@@ -1,42 +1,17 @@
-let images = document.querySelectorAll('.row>img');
-images.forEach(image => {
-    image.style.transition = 'transform 0.3s'; // Transition duration of 0.3 seconds
-    image.addEventListener('mouseover', () => {
-        image.style.transform = 'scale(1.1)';
-    });
-    image.addEventListener('mouseout', () => {
-        image.style.transform = 'scale(1)';
-    });
-});
-
-gsap.from('.row>img', {
-    opacity: 0,
-    delay: 0.3,
-    duration: 0.5,
-    stagger: 0.1,
-});
-
-gsap.to('#images-container', {
-    transform: 'rotate(0deg)',
+let tl = gsap.timeline({
     scrollTrigger: {
-        trigger: '#images-container',
-        scroller: 'body',
-        start: 'top 5%',
-        end: 'top',
-        markers: true,
-        scrub: 3,
-    },
+        trigger: "#opening-page",
+        pin: true,
+        scrub: 2,
+        start: "top top",
+        end: "50%+=500px",
+    }
 });
 
-// gsap.to('.other-pages', {
-//     display: 'block',
-//     backgroundColor: 'rgba(0, 0, 0, 1)',
-//     scrollTrigger: {
-//         trigger: '.other-pages',
-//         scroller: 'body',
-//         start: 'top 60%',
-//         end: 'top 50%',
-//         markers: true,
-//         scrub: true,
-//     },
-// });
+tl.to(".images-container>.image-card>img", { scale: 1 }, 0);
+tl.to(".images-container", { scale: 2, rotate: 0 }, 0);
+
+
+tl.to(".text-layer", { height: "100%" }, .2);
+tl.to(".text-layer h1", { scale: 1 }, .6);
+tl.to(".images-container", { scale: .8, opacity: .2 }, .6);

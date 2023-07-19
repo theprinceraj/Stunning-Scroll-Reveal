@@ -11,10 +11,10 @@ body {
 }
 
 #opening-page {
-    height: 100vh;
-    width: 100%;
     position: relative;
     overflow: hidden;
+    height: 100vh;
+    width: 100%;
 }
 
 .images-container {
@@ -27,4 +27,41 @@ body {
     align-items: flex-start;
     justify-content: center;
     transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.image-card {
+    overflow: hidden;
+    width: 200px;
+    height: 300px;
+    margin: 0.5rem;
+    transition: all ease 0.3s;
+}
+.image-card:hover {
+    transform: scale(1.07);
+}
+
+.image-card>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-layer {
+    width: 100vw;
+    height: 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+    font-size: clamp(3rem, 8vw, 10rem);
+    overflow: hidden;
+}
+
+.text-layer>h1 {
+    transform: scale(0);
 }
