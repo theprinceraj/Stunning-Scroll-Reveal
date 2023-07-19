@@ -18,14 +18,13 @@ gsap.from('.row>img', {
 
 gsap.to('#images-container', {
     transform: 'rotate(0deg)',
-    scale: '5',
     scrollTrigger: {
-        trigger: '.other-pages',
+        trigger: '#images-container',
         scroller: 'body',
-        start: 'top 90%',
-        end: 'top 50%',
+        start: 'top 5%',
+        end: 'top',
         markers: true,
-        scrub: 2,
+        scrub: 3,
     },
 });
 
