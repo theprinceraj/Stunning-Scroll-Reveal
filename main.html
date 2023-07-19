@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scroll Reveal Animation</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="main.css">
 </head>
 
@@ -39,10 +40,14 @@
             <div class="image-card"><img src="images/img-25.png" alt="img-25"></div>
             <div class="image-card"><img src="images/img-26.png" alt="img-26"></div>
         </div>
-        <div class="text-layer">
-            <h1><img src="https://sofi.gg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnavbar_logo.2d1b3164.png&w=256&q=75" alt="Sofi.gg LOGO"></h1>
+        <div id="scroll-down-text">
+            <button onclick="scrollButton()" id="scrollButton"><i class='bx bxs-chevrons-down'></i>SCROLL DOWN<i
+                    class='bx bxs-chevrons-down'></i></button>
         </div>
-
+        <div class="text-layer" id="next-page">
+            <h1><img src="https://sofi.gg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnavbar_logo.2d1b3164.png&w=256&q=75"
+                    alt="Sofi Logo"></h1>
+        </div>
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
@@ -50,6 +55,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
         integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"
+        integrity="sha512-v/m68W+vaGN/6igoyFpd4GlQzu0jx9/n5gr2PKq5vif+RObyGKHse384YHrOULaxZ810XhlHUrmB3U8UnPB19Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="main.js"></script>
 </body>

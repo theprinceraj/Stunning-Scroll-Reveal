@@ -28,3 +28,12 @@ tl.to(".images-container", {
     scale: 0.8,
     opacity: 0.2
 }, 0.7);
+
+document.addEventListener('DOMContentLoaded',() => {
+    document.getElementById('scrollButton').addEventListener('click', () => {
+        gsap.to(window, {
+            duration: 1, // Adjust the duration as needed
+            scrollTo: 300,
+        });
+    });
+});
