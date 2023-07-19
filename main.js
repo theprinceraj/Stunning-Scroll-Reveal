@@ -30,6 +30,7 @@ tl.to(".images-container", {
 }, 0.7);
 
 document.addEventListener('DOMContentLoaded',() => {
+    // Functionality for scroll button
     document.getElementById('scrollButton').addEventListener('click', () => {
         gsap.to(window, {
             duration: 1, // Adjust the duration as needed
