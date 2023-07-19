@@ -4,7 +4,7 @@ let tl = gsap.timeline({
         pin: true,
         scrub: 2,
         start: "top top",
-        end: "50%+=500px",
+        end: "50%+=400px",
     }
 });
 
