@@ -65,3 +65,7 @@ body {
 .text-layer>h1 {
     transform: scale(0);
 }
+
+.text-layer>h1>span {
+    color: deeppink;
+}
